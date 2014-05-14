@@ -17,7 +17,8 @@ A tiny WordPress plugin to track events of link clicks in the main content area 
 Links will show up under Events in the Analytics site, and will have a category of 'Links', a label of 'PageID: CURRENT_PAGE_URI', and the value of the href of the link being tracked.
 
 Example of code added to properly formed URLs in main post content:
-`onclick="javascript:_gaq.push(['_trackEvent', 'Links', 'PageID: /my_blog/2013/04/my_cool_post/ ', 'http://www.myurl.com/my_blog/my_link.html']);"`
+
+`<a onclick="ga('send', 'event', 'Links', 'click', 'http://twitter.com/chris_dickow');" href="http://twitter.com/chris_dickow">@chris_dickow</a>`
 
 The above example assumes the href of the link is: `http://www.myurl.com/my_blog/my_link.html`
 
