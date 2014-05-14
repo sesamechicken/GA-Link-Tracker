@@ -26,9 +26,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 add_filter( 'the_content', 'GA_Link_Tracker' );
 // Main link tracker function
 function GA_Link_Tracker($content){
-
-    if (preg_match('/href="([^"]*)"/i', $content, $regs))
-    {
+    if (preg_match('/href="([^"]*)"/i', $content, $regs)){
         $result = $regs[1];
         $needle = "<a";
         $content = str_replace($needle, "<a onclick=\"ga('send', 'event', 'Links', 'click', '". $result ."');\"", $content);
