@@ -3,7 +3,7 @@ Contributors: project107
 Donate link: http://www.project107.net
 Tags: links, link tracker, analytics, google analytics, events
 Requires at least: 3.3
-Tested up to: 3.5.1
+Tested up to: 3.9.1
 Stable tag: stable
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -42,6 +42,7 @@ Nothing.
 
 == Changelog ==
 v2.1 - Minor bugfix
+
 v2.0 - Updated to use Google's newer analyitcs.js file
 
 v1.0 - Initial release.

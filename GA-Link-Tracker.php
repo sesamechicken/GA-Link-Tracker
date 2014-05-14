@@ -8,7 +8,7 @@ Author: PROJECT107
 Author URI: http://project107.net
 License: GPL2
 
-Copyright 2013  PROJECT107  (email : chris@project107.net)
+Copyright 2014  PROJECT107  (email : chris@project107.net)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2, as 
