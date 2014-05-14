@@ -41,6 +41,6 @@ Nothing.
 
 
 == Changelog ==
-
+v2.0 - Updated to use Google's newer analyitcs.js file
 v1.0 - Initial release.
 
