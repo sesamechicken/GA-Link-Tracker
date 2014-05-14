@@ -31,7 +31,7 @@ function GA_Link_Tracker($content){
     {
         $result = $regs[1];
         $needle = "<a";
-        $content = str_replace($needle, "<a onclick='ga('send', 'event', 'Links', 'click', '". $result ."');' ", $content);
+        $content = str_replace($needle, "<a onclick=\"ga('send', 'event', 'Links', 'click', '". $result ."');\"", $content);
     }
     return $content;
 }
