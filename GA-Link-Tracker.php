@@ -3,7 +3,7 @@
 Plugin Name: GA Link Tracker
 Plugin URI: http://project107.net/GA-Link-Tracker
 Description: A WP Plugin to automagically add code to href's to track as events in Google Analytics. That's it. v2 uses analyics.js NOT ga.js
-Version: 2.1
+Version: 2.2
 Author: PROJECT107
 Author URI: http://project107.net
 License: GPL2
@@ -28,7 +28,7 @@ add_filter( 'the_content', 'GA_Link_Tracker' );
 function GA_Link_Tracker($content){
     if (preg_match('/href="([^"]*)"/i', $content, $regs)){
         $result = $regs[1];
-        $needle = "<a";
+        $needle = "<a ";
         $content = str_replace($needle, "<a onclick=\"ga('send', 'event', 'Links', 'click', '". $result ."');\"", $content);
     }
     return $content;
